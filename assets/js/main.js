@@ -70,3 +70,10 @@ $(function () {
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
     });
 });
+
+$(function() {
+  $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('.split-pane').offset().top }, 'slow');
+      return false;
+  });
+});
