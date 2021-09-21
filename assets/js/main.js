@@ -24,7 +24,7 @@ var x = setInterval(function () {
     var eventDays = Math.floor(eventDistance / (1000 * 60 * 60 *24));
 
     // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = "<i class='fas fa-clock'></i> " +days + "d " +  hours + "h " +  minutes + "m " + seconds + "s";
+    // document.getElementById("demo").innerHTML = "<i class='fas fa-clock'></i> " +days + "d " +  hours + "h " +  minutes + "m " + seconds + "s";
 
     if(days >= 0) {
       document.getElementById('main-image').innerHTML="<img src='images/Day " + 0 + ".png' class='responsive'></img>";
@@ -38,7 +38,7 @@ var x = setInterval(function () {
     if(eventDays < 0)
     {
       document.getElementById('main-image').innerHTML="<img src='images/Day " + 10 + ".png' class='responsive'></img>";
-      document.getElementById("demo").innerHTML = "Event Completed ";
+      document.getElementById("demo").innerHTML = "Event Will Start Soon";
     }
 
 
@@ -69,32 +69,4 @@ $(function () {
         e.preventDefault();
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
     });
-});
-
-
-// animation on scroll
-$(function(){
-
-  window.sr = ScrollReveal();
-
-  	if ($('.timeline-content').hasClass('js--fadeInLeft')) {
-  		$('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
-  	}
-
-  	sr.reveal('.js--fadeInRight', {
-	    origin: 'right',
-	    distance: '300px',
-	    easing: 'ease-in-out',
-	    duration: 800,
-	  });
-
-
-
-});
-
-$(function() {
-  $('.scroll-down').click (function() {
-    $('html, body').animate({scrollTop: $('.split-pane').offset().top }, 'slow');
-    return false;
-  });
 });
