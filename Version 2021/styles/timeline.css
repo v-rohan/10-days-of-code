@@ -299,7 +299,7 @@ body {
     }
     .main-timeline .timeline:nth-child(2n) .year:before{
         border-left: none;
-        border-right: 18px solid rgb(230,80,92);
+        border-right: 18px solid var(--primary-blue-color);
         right: auto;
         left: -18px;
     }

@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="../styles/timeline.css">
 </head>
 
-<body>
+<body id="Timeline" background="assets/Images/back.png">
     <div id="preloader">
         <div id="status"></div>
     </div>
@@ -229,7 +229,7 @@
         $(window).on('load', function () { 
             jQuery('#status').fadeOut(900); 
             $('#preloader').delay(2).fadeOut(1000); 
-            $('body').delay(1000).css({'overflow':'visible', 'background-color': 'black'});
+            $('body').delay(1000).css({'overflow':'visible', 'background': 'black'});
         });
     </script>
 </body>
