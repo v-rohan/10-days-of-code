@@ -10,9 +10,8 @@
     <link rel="stylesheet" type="text/css" href="styles/global.css">
         <link rel="stylesheet" type="text/css" href="styles/timeline.css">
     <script src="assets/js/navbar.js"></script>
-  
 </head>
-<body background="assets/Images/back.png" class="background">
+<body class="background">
   <div class="Navbar">
 <div class="topnav" id="myTopnav">
   <div class="logo">
@@ -46,5 +45,16 @@
       $("#Timeline").load("src/timeline.html"); 
     });
     </script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+
+<script>
+
+// Changing the defaults
+window.sr = ScrollReveal({ reset: false });
+
+// Customizing a reveal set
+sr.reveal('div', {opacity: 0.9,duration:2000});
+
+</script>
 </body>
 </html>
