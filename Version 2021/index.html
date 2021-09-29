@@ -9,6 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/global.css">
     <script src="assets/js/navbar.js"></script>
+      <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#Timeline").load("src/timeline.html"); 
+    });
+    </script>
 </head>
 <body background="assets/Images/back.png" class="background">
   <div class="Navbar">
@@ -37,4 +43,5 @@
   <img src="assets/Images/menu.png" alt="">
 </span>
 </div>
+<div id="Timeline"></div>
 </body>
