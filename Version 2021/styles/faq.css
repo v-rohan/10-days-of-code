@@ -9,7 +9,6 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   background-color: #ffdde2;
   z-index: 99999;
 }
@@ -30,26 +29,6 @@ html {
   background-size: contain;
 }
 
-.navbar {
-  background-color: rgb(230, 80, 92) !important;
-}
-
-.navbar-brand {
-  color: white;
-  margin-left: 1%;
-}
-
-.nav-item a {
-  font-size: 1.2em;
-  color: white;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: white;
-}
-
 #texty {
   color: white;
 }
@@ -64,10 +43,10 @@ html {
 }
 
 .answer {
-  background-color: #fffaf0;
+  background-color: #a4bb40;
   height: auto;
   display: flex;
-  border-left: solid 5px #a9a9a9;
+  border-left: solid 5px var(--primary-blue-color);
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -84,7 +63,7 @@ html {
 
 .a-span {
   font-size: 5vh;
-  color: #a9a9a9;
+  color: var(--primary-blue-color);
 }
 
 .a-text {

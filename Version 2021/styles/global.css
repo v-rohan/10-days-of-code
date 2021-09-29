@@ -3,14 +3,24 @@
   --primary-blue-color: #4caed8;
   --primary-yellow-color: #b2d02a;
 }
+body {
+        min-height: 100vh;
+}
+a {
+    text-decoration: none !important;
+}
 .background {
+    background-image: url("../assets/Images/back.png");
   color: var(--text-color);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   max-width: 1440px;
+    min-height: 100vh;
   margin: 0 auto;
+  background-position: fixed;
+  background-attachment: fixed;
 }
 .Navbar{
     display: flex;
