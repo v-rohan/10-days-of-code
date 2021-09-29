@@ -1,0 +1,122 @@
+.landingSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   position:relative;
+   padding: 10px;
+   margin: 30px;
+}
+.landingSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 5px;
+    background: linear-gradient(to right, #4CAED8, #C4E306);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+.landingSectionWrapper{
+    display: flex;
+    background: rgba(58, 79, 60, 0.29);
+      border-radius: 50px;
+      padding: 10px;
+}
+.landingSectionLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landingSectionLeft img {
+    width: 600px;
+    height: auto;
+}
+.landingSectionRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.landingSectionRight span{
+    color: var(--text-blue-color);
+}
+.landingSectionRight h1 {
+    color: var(--text-yellow-color);
+    font-size: 50px;
+}
+.landingSectionRight p {
+    font-size: 20px;
+}
+.landingSectionRight ul {
+    padding-left: 15px;
+}
+.landingSectionRight li {
+    font-size: 20px;
+}
+.Projects h1 {
+    text-align: center;
+}
+.projectDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media only screen and (max-width: 935px) {
+    .landingSection {
+        margin: 25px;
+    }
+    .landingSection::before {
+        border-radius: 30px;
+    }
+ .landingSectionWrapper {
+     display: block;
+     padding: 5px;
+     border-radius: 30px;
+ }
+ .landingSectionRight {
+         margin-bottom: 0px;
+ }
+ .landingSectionLeft img {
+     width: 350px;
+     height: auto;
+ }
+ .landingSectionRight h1 {
+     font-size: 43px;
+     text-align: center;
+ }
+ .landingSectionRight p {
+     font-size: 15px;
+     text-align: center;
+ }
+ .landingSectionRight li {
+     font-size: 15px;
+ }
+ .listDetails {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+ }
+ .landingSectionRight {
+     align-items: center;
+     justify-content: center;
+ }
+ .landingSectionRight ul {
+     width: 90%;
+ }
+}
+@media only screen and (max-width: 450px) {
+    .landingSectionLeft img {
+        width: 250px;
+        height: auto;
+    }
+     .landingSectionRight h1 {
+         font-size: 33px;
+     }
+}

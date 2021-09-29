@@ -8,6 +8,7 @@
      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/global.css">
+       <link rel="stylesheet" type="text/css" href="styles/home.css">
         <link rel="stylesheet" type="text/css" href="styles/timeline.css">
     <script src="assets/js/navbar.js"></script>
 </head>
@@ -38,11 +39,20 @@
   <img src="assets/Images/menu.png" alt="">
 </span>
 </div>
-<div id="Timeline"></div>
+<div id="landingSection"></div>
+  <h1 class="time">Timeline</h1>
+<div id="Timeline">
+
+</div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script> 
     $(function(){
       $("#Timeline").load("src/timeline.html"); 
+    });
+    </script>
+       <script> 
+    $(function(){
+      $("#landingSection").load("src/home.html"); 
     });
     </script>
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
