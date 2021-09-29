@@ -1,0 +1,16 @@
+.project-card {
+    width: 40%;
+    border: 1px black solid;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.thumbnail {
+    padding: 10px;
+    text-align: justify;
+}
+
+.content {
+    text-align: justify;
+}
