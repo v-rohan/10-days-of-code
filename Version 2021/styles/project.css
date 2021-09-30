@@ -13,11 +13,30 @@
     background-position: unset;
     background-size: contain;
 }
-.col-7 p {
-    color: black;
+.card {
+    background-color: transparent !important;
 }
-.col-7 {
-    background-color: var(--background-color) !important;
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    padding: 2px;
+    background: linear-gradient(to right, #4CAED8, #C4E306) !important;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+.col-5 {
+    background-color: #014262a8;
+    border-radius: 25px;
+    z-index: -30;
 }
 .course {
     display: flex;
@@ -27,10 +46,6 @@
     margin: 20px;
     overflow: hidden;
     width: 700px;
-}
-.col-5 {
-    background-color: var(--primary-yellow-color) !important;
-    color: black !important;
 }
 .course h6 {
     opacity: 0.6;
@@ -46,14 +61,12 @@
 
 .course-preview {
     background-color: var(--primary-yellow-color) !important;
-    color: #fff;
     padding: 30px;
     max-width: 250px;
 }
 
 
 .course-preview a {
-    color: #fff;
     display: inline-block;
     font-size: 12px;
     opacity: 0.6;
@@ -81,7 +94,6 @@
 }
 
 .social-icons i {
-    color: #e6505c;
     position: absolute;
     top: 0.5em;
     left: 0.5em;
@@ -101,7 +113,7 @@
     height: 45px;
     border-radius: 100%;
     display: block;
-    background: white;
+    background: var(--primary-blue-color);
     transition: all 265ms ease-out;
 }
 
@@ -114,19 +126,19 @@
     transform: scale(1.4);
     -ms-transform: scale(1.4);
     -webkit-transform: scale(1.4);
-    color: #FFFFFF;
-    background: white;
+    color: var(--primary-blue-color);
+    background: var(--primary-blue-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 265ms ease-in;
 }
 
 .btn {
-    background-color: #ff1100;
+    background-color: var(--primary-yellow-color);
     border: 0;
     border-radius: 50px;
     box-shadow: 0 10px 10px rgba(250, 48, 48, 0.2);
-    color: #ff0e0e;
+    color: var(--primary-yellow-color);
     font-size: 16px;
     padding: 15px 25px;
     position: relative;
@@ -137,8 +149,8 @@
 
 .floating-btn {
     border-radius: 26.5px;
-    background-color: #fc1707;
-    border: 1px solid #ff0000;
+    background-color: var(--primary-yellow-color);
+    border: 1px solid  var(--primary-yellow-color);
     box-shadow: 0 16px 22px -17px #fd1c1cc0;
     color: #ace1f8;
     cursor: pointer;
@@ -161,7 +173,7 @@
 }
 
 .floating-text {
-    background-color: #ff0909;
+    background-color: var(--primary-yellow-color);
     border-radius: 10px 10px 0 0;
     color: #fff;
     padding: 7px 15px;
@@ -189,8 +201,8 @@
 }
 
 .badge {
-    background: #e6505c;
-    color: white
+    background: var(--primary-yellow-color);
+    color: black;
 }
 
 
