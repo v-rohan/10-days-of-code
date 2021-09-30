@@ -4,9 +4,7 @@
   --primary-yellow-color: #b2d02a;
   --text-blue-color: #0099E3;
   --text-yellow-color: #B4D32D;
-}
-body {
-        min-height: 100vh;
+  --background-color:rgba(58, 79, 60, 0.29);
 }
 a {
     text-decoration: none !important;
@@ -26,6 +24,7 @@ a {
 }
 .time {
     text-align: center;
+    font-size: 70px;
 }
 .Navbar{
     display: flex;
@@ -33,9 +32,10 @@ a {
     max-width: 1440px;
     margin: 0 auto;
     padding: 10px;
+    z-index: 20000;
 }
 .topnav {
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -63,13 +63,13 @@ a {
 }
 
 .sidenav {
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 30000;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: rgb(8, 7, 7);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -80,6 +80,7 @@ a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 25px;
+     z-index: 3001;
     display: block;
     transition: 0.3s;
 }
