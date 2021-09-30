@@ -13,11 +13,14 @@
     background-position: unset;
     background-size: contain;
 }
-
-
+.col-7 p {
+    color: black;
+}
+.col-7 {
+    background-color: var(--background-color) !important;
+}
 .course {
     display: flex;
-    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     max-width: 100%;
@@ -25,7 +28,10 @@
     overflow: hidden;
     width: 700px;
 }
-
+.col-5 {
+    background-color: var(--primary-yellow-color) !important;
+    color: black !important;
+}
 .course h6 {
     opacity: 0.6;
     margin: 0;
@@ -39,7 +45,7 @@
 }
 
 .course-preview {
-    background-color: #e6505c;
+    background-color: var(--primary-yellow-color) !important;
     color: #fff;
     padding: 30px;
     max-width: 250px;
