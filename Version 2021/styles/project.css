@@ -13,6 +13,13 @@
     background-position: unset;
     background-size: contain;
 }
+.col-5 a {
+    text-decoration: underline !important;
+}
+.Projects h1{
+    text-align: center;
+    font-size: 70px;
+}
 .card {
     background-color: transparent !important;
 }
@@ -34,9 +41,28 @@
     mask-composite: exclude;
 }
 .col-5 {
-    background-color: #014262a8;
-    border-radius: 25px;
-    z-index: -30;
+    background-color: var(--card-blue-color);
+    border-radius: 25px 0px 0px 25px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.col-7 {
+    background-color: var(--background-color);
+      border-radius: 0px 25px 25px 0px;
+        display: flex;
+        align-items: center;
+}
+.col-5 img {
+    width: 150px;
+    height: auto;
+}
+.col-5-wrapper {
+    padding-left: 10px;
+}
+.card-body {
+    height: 300px;
+    width: auto;
 }
 .course {
     display: flex;
@@ -84,6 +110,8 @@
     padding: 0;
     list-style: none;
     margin: 1em;
+    margin-top: 0.25 em;
+       color: var(--primary-blue-color);
 }
 
 .social-icons li {
@@ -97,6 +125,7 @@
     position: absolute;
     top: 0.5em;
     left: 0.5em;
+     color: var(--card-blue-color);
     transition: all 265ms ease-out;
 }
 
@@ -113,7 +142,8 @@
     height: 45px;
     border-radius: 100%;
     display: block;
-    background: var(--primary-blue-color);
+    background: var(--primary-yellow-color);
+    color: var(--primary-blue-color);
     transition: all 265ms ease-out;
 }
 
@@ -152,7 +182,7 @@
     background-color: var(--primary-yellow-color);
     border: 1px solid  var(--primary-yellow-color);
     box-shadow: 0 16px 22px -17px #fd1c1cc0;
-    color: #ace1f8;
+    color: var(--primary-blue-color);
     cursor: pointer;
     font-size: 16px;
     line-height: 20px;
@@ -205,7 +235,9 @@
     color: black;
 }
 
-
+.col-12 {
+    margin-bottom: 50px !important;
+}
 @media only screen and (max-width: 767px) {
 
     #status {
@@ -214,6 +246,10 @@
         left: 45%;
         top: 40%;
 
+    }
+    .col-5 img {
+        width: 90px;
+        height: auto;
     }
 }
 
@@ -225,5 +261,9 @@
         left: 45%;
         top: 40%;
 
+    }
+    .card-body {
+        height: 350px;
+        width: auto;
     }
 }

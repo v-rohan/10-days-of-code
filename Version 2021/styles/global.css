@@ -4,6 +4,7 @@
   --primary-yellow-color: #b2d02a;
   --text-blue-color: #0099E3;
   --text-yellow-color: #B4D32D;
+  --card-blue-color: #014262a8;
   --background-color:rgba(58, 79, 60, 0.29);
 }
 a {
@@ -44,6 +45,7 @@ a {
     height: 40px;
     width: auto;
     margin-right: 10px;
+    margin-top: 15px;
 }
 .topnav a {
     float: left;
@@ -118,5 +120,8 @@ a {
 
      .sidenav a {
          font-size: 20px;
+     }
+     .topnav img {
+         margin-top: 0px;
      }
 }

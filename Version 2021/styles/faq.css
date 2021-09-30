@@ -4,15 +4,6 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #ffdde2;
-  z-index: 99999;
-}
-
 #status {
   width: 200px;
   height: 200px;
@@ -34,7 +25,7 @@ html {
 }
 
 .question {
-  background-color: #4caed8;
+  background-color: var(--card-blue-color);
   height: auto;
   display: flex;
   border-left: solid 5px #b2d02a;
@@ -46,7 +37,7 @@ html {
   background-color: #a4bb40;
   height: auto;
   display: flex;
-  border-left: solid 5px var(--primary-blue-color);
+  border-left: solid 5px var(--card-blue-color);
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -63,7 +54,7 @@ html {
 
 .a-span {
   font-size: 5vh;
-  color: var(--primary-blue-color);
+  color: var(--card-blue-color);
 }
 
 .a-text {
@@ -116,7 +107,7 @@ html {
     width: 100%;
     height: auto;
     border-style: none;
-    background: #4caed8;
+    background: var(--card-blue-color);
     color: #fffaf0;
     font-size: 20px;
     cursor: pointer;
@@ -129,8 +120,8 @@ html {
   #grow4,
   #grow5,
   #grow6 {
-    background-color: #fffaf0;
-    border-left: solid 5px #a9a9a9;
+    background-color: var(--primary-yellow-color);
+    border-left: solid 5px var(--card-blue-color);
     color: #444444;
     font-weight: bold;
     font-size: 3vh;
