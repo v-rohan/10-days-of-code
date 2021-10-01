@@ -251,6 +251,13 @@
         width: 90px;
         height: auto;
     }
+    .bigImage{
+        width: 170px !important;
+          height: auto;
+    }
+    .col-7 p{
+        font-size: 0.8em;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -265,5 +272,8 @@
     .card-body {
         height: 350px;
         width: auto;
+    }
+    .bigImage {
+        width: 120px !important;
     }
 }

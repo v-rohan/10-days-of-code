@@ -180,7 +180,7 @@ body {
     padding: 8px 30px;
     margin: 0;
     font-size: 14px;
-    color: #fff;
+    color: #212529;
     background: var(--primary-blue-color);
     text-align: center;
     position: absolute;
@@ -207,7 +207,7 @@ body {
     background: var(--primary-yellow-color);
     position: relative;
     font-weight: 200;
-    color: #fff;
+    color: #212529;
     /* font-size: 0.5em; */
 }
 .main-timeline .timeline-content:after{

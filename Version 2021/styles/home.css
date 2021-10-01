@@ -169,6 +169,7 @@
     }
     .landingSection::before {
         border-radius: 30px;
+        padding: 3px;
     }
  .landingSectionWrapper {
      display: block;
