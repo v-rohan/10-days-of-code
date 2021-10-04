@@ -1,152 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 :root {
   --text-color: #fff;
   --primary-blue-color: #4caed8;
   --primary-yellow-color: #b2d02a;
-  --text-blue-color: #0099E3;
-  --text-yellow-color: #B4D32D;
+  --text-blue-color: #0099e3;
+  --text-yellow-color: #b4d32d;
   --card-blue-color: #014262a8;
-  --background-color:rgba(58, 79, 60, 0.29);
+  --background-color: rgba(58, 79, 60, 0.29);
 }
 a {
-    text-decoration: none !important;
-    font-family: 'Raleway',
-    sans-serif;
+  text-decoration: none !important;
+  font-family: "Raleway", sans-serif;
 }
 h1 {
-    font-family: 'Raleway',
-    sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 h2 {
-    font-family: 'Raleway',
-    sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 p {
-    font-family: 'Raleway',
-    sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 li {
-    font-family: 'Raleway',
-    sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 div {
-    font-family: 'Raleway',
-    sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .background {
-    background-image: url("../assets/Images/back.png");
+  background-image: url("../assets/Images/back.png");
   color: var(--text-color);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
   max-width: 1380px;
-    min-height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   background-position: fixed;
   background-attachment: fixed;
+  background-color: rgb(13, 17, 27);
 }
 .time {
-    text-align: center;
-    font-size: 70px;
+  text-align: center;
+  font-size: 70px;
 }
-.Navbar{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 10px;
-    z-index: 20000;
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px;
+  z-index: 20000;
 }
 .topnav {
-    /* overflow: hidden; */
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-.topnav img{
-    height: 40px;
-    width: auto;
-    margin-right: 10px;
-    margin-top: 15px;
+.topnav img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  margin-top: 15px;
 }
 .topnav a {
-    float: left;
-    display: flex;
-    color: var(--text-color);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
+  float: left;
+  display: flex;
+  color: var(--text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .topnav a:hover {
-    color: var(--primary-blue-color);
+  color: var(--primary-blue-color);
 }
 .menuicon {
-    display: none;
+  display: none;
 }
 
 .sidenav {
-    height: 100vh;
-    width: 0;
-    position: fixed;
-    z-index: 30000;
-    top: 0;
-    right: 0;
-    background-color: rgb(8, 7, 7);
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 30000;
+  top: 0;
+  right: 0;
+  background-color: rgb(8, 7, 7);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 25px;
-     z-index: 3001;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 25px;
+  z-index: 3001;
+  display: block;
+  transition: 0.3s;
 }
 .sidenav a:hover {
-    color: var(--primary-blue-color);
+  color: var(--primary-blue-color);
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 #main {
-    transition: margin-left .5s;
-    padding: 20px;
+  transition: margin-left 0.5s;
+  padding: 20px;
 }
 @media screen and (max-width: 768px) {
-    .menuicon{
-        display:block;
-    }
-    .topnav a{
-        display: none;
-    }
+  .menuicon {
+    display: block;
+  }
+  .topnav a {
+    display: none;
+  }
 
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-     .sidenav {
-         padding-top: 30px;
-     }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .sidenav {
+    padding-top: 30px;
+  }
 
-     .sidenav a {
-         font-size: 20px;
-     }
-     .topnav img {
-         margin-top: 0px;
-     }
+  .sidenav a {
+    font-size: 20px;
+  }
+  .topnav img {
+    margin-top: 0px;
+  }
 }
