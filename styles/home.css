@@ -210,6 +210,12 @@
   background-color: var(--background-color);
   color: var(--primary-yellow-color);
 }
+@media only screen and (min-width: 936px) and (max-width: 1150px){
+ .landingSectionLeft img {
+   width: 400px;
+   height: auto;
+ }
+}
 @media only screen and (max-width: 935px) {
   .Register {
     justify-content: center;
@@ -229,11 +235,14 @@
     padding: 5px;
     border-radius: 30px;
   }
+.landingSectionLeft {
+  margin-right: 30px;
+}
   .landingSectionRight {
     margin-bottom: 0px;
   }
   .landingSectionLeft img {
-    width: 350px;
+    width: 300px;
     height: auto;
   }
   .landingSectionRight h1 {
@@ -271,5 +280,8 @@
   }
   .landingSectionRight h1 {
     font-size: 38px;
+  }
+  .landingSectionLeft {
+    margin-right: 20px;
   }
 }
