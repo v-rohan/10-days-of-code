@@ -35,9 +35,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 50px;
+  margin-left:20px;
 }
 .landingSectionLeft img {
-  width: 600px;
+  width: 550px;
   height: auto;
 }
 .landingSectionRight {
@@ -167,6 +169,7 @@
 @media only screen and (max-width: 935px) {
   .landingSection {
     margin: 25px;
+    margin-top: 40px;
   }
   .landingSection::before {
     border-radius: 30px;
@@ -215,6 +218,7 @@
   .landingSectionLeft img {
     width: 250px;
     height: auto;
+    margin-top: 20px;
   }
   .landingSectionRight h1 {
     font-size: 38px;
