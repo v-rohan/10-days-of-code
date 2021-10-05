@@ -67,7 +67,7 @@ div {
   margin-right: 10px;
   margin-top: 15px;
 }
-.topnav a {
+.title a {
   float: left;
   display: flex;
   color: var(--text-color);
@@ -77,7 +77,7 @@ div {
   font-size: 24px;
 }
 
-.topnav a:hover {
+.title a:hover {
   color: var(--primary-blue-color);
 }
 .menuicon {
@@ -126,11 +126,11 @@ div {
   .menuicon {
     display: block;
   }
-  .topnav a {
+  .title a {
     display: none;
   }
 
-  .topnav a.icon {
+  .title a.icon {
     float: right;
     display: block;
   }
