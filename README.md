@@ -3,5 +3,5 @@ Website for the 10 Days of Code event organized by GNU/Linux User's Group, NIT D
 
 ## 17-26th October, 2021
 
-![example workflow](https://github.com/v-rohan/10-days-of-code/actions/workflows/node.js.yml/badge.svg)
+![example workflow](https://github.com/v-rohan/10-days-of-code/actions/workflows/main.yml/badge.svg)
 
