@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
+html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 46%;
+  top: 35%;
+  background-image: url("https://media.giphy.com/media/STroE7bTBLTzxQUrZc/giphy.gif");
+  border-radius: 50%;
+  z-index: 9999;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -10px 0 0 -36px;
+  background-position: unset;
+  background-size: contain;
+}
+
+#texty {
+  color: white;
+}
+
+.question {
+  background-color: var(--card-blue-color);
+  height: auto;
+  display: flex;
+  border-left: solid 5px #b2d02a;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.answer {
+  background-color: #a4bb40;
+  height: auto;
+  display: flex;
+  border-left: solid 5px var(--card-blue-color);
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.q-span {
+  font-size: 5vh;
+  color: #b2d02a;
+}
+
+.q-text {
+  color: #ffffff;
+  font-size: 2vh;
+}
+
+.a-span {
+  font-size: 5vh;
+  color: var(--card-blue-color);
+}
+
+.a-text {
+  font-size: 2vh;
+  color: #000000;
+}
+
+.col-1,
+.col-11 {
+  margin: 0 !important;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .a-span {
+    font-size: 6vh;
+  }
+}
+
+@media only screen and (max-width: 776px) and (min-width: 568px) {
+  .a-span,
+  .q-span {
+    margin-left: -1% !important;
+  }
+  .a-text,
+  .q-text {
+    margin-left: 1% !important;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  .questions-collapse {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  #status {
+    width: 150px;
+    height: 150px;
+    left: 45%;
+    top: 40%;
+  }
+  #questions {
+    display: none;
+  }
+  h1 {
+    font-size: 2em !important;
+  }
+  #more-button {
+    width: 100%;
+    height: auto;
+    border-style: none;
+    background: var(--card-blue-color);
+    color: #fffaf0;
+    font-size: 20px;
+    cursor: pointer;
+    border-left: solid 5px #b2d02a;
+  }
+  #grow0,
+  #grow1,
+  #grow2,
+  #grow3,
+  #grow4,
+  #grow5,
+  #grow6 {
+    background-color: var(--primary-yellow-color);
+    border-left: solid 5px var(--card-blue-color);
+    color: #444444;
+    font-weight: bold;
+    font-size: 3vh;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+    height: 0;
+    overflow: hidden;
+  }
+}
