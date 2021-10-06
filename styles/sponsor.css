@@ -60,4 +60,8 @@
 .SponsorDetails h2 {
   width: 200px;
   line-height: 1.75rem;
+  margin-top: 20px;
+}
+.SponsorDetails h4 {
+  color: var(--primary-blue-color);
 }
