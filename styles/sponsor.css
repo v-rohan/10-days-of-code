@@ -65,6 +65,15 @@
   line-height: 1.75rem;
   margin-top: 20px;
 }
+.SponsorDetails a {
+  z-index: 20;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: var(--text-color);
+}
+.SponsorDetails a:hover {
+  color: var(--primary-blue-color);
+}
 .SponsorDetails h4 {
   color: var(--primary-blue-color);
 }
