@@ -236,53 +236,57 @@
   margin-bottom: 50px !important;
 }
 .Register {
-    display: flex;
-    align-items: center;
-    position: relative;
- justify-content:center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .RegisterWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: fit-content;
-    margin: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin: 0.5em;
 }
 
 .RegisterWrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 18px;
-    padding: 2px;
-    z-index: -1;
-    background: linear-gradient(to right, #4caed8, #c4e306);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 18px;
+  padding: 2px;
+  z-index: -1;
+  background: linear-gradient(to right, #4caed8, #c4e306);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 .Register button {
-    background-color: var(--card-blue-color);
-    color: var(--text-color);
-    border-radius: 18px;
-    font-size: 20px;
-    border-style: none;
-    width: 200px;
-    height: 50px;
-    cursor: pointer;
+  background-color: var(--card-blue-color);
+  color: var(--text-color);
+  border-radius: 18px;
+  font-size: 20px;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .RegisterWrapper button:hover {
-    background-color: var(--background-color);
-    color: var(--primary-yellow-color);
+  background-color: var(--background-color);
+  color: var(--primary-yellow-color);
+}
+.col-5-wrapper h4 {
+  white-space: wrap;
+  overflow-wrap: anywhere;
 }
 @media only screen and (max-width: 767px) {
   #status {
