@@ -19,7 +19,7 @@
   align-items: center;
   padding: 10px 70px;
   width: 100%;
-  height: 70vh;
+  height: 65vh;
 }
 .SponsorDetails {
   margin: 40px;
@@ -76,4 +76,12 @@
 }
 .SponsorDetails h4 {
   color: var(--primary-blue-color);
+}
+@media screen and (max-width: 900px) {
+  .SponsorDiv {
+    height: 100%;
+  }
+  .techbairn img {
+    width: 220px !important;
+  }
 }
