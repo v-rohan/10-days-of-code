@@ -85,3 +85,12 @@
     width: 220px !important;
   }
 }
+@media screen and (max-width: 500px) {
+  .code {
+    min-width: 260px !important;
+    height: 100%;
+  }
+  .code h4 {
+    padding-bottom: 15px !important;
+  }
+}
