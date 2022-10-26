@@ -1,16 +1,18 @@
 .landingSection {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   padding: 10px;
   margin: 30px;
+  margin-top: 2em;
   z-index: 1;
 }
 .projectDetailsWrapper a {
   z-index: 30;
 }
-.landingSection::before {
+
+/* .landingSection::before {
   content: "";
   position: absolute;
   top: 0;
@@ -24,46 +26,76 @@
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
-}
+} */
 .landingSectionWrapper {
   display: flex;
-  background: var(--background-color);
-  border-radius: 50px;
+  justify-content: space-between;
   padding: 10px;
 }
 .landingSectionLeft {
   display: flex;
+  flex-direction: column;
+  width:50%;
+  
   align-items: center;
   justify-content: center;
   margin-right: 50px;
   margin-left: 20px;
 }
+.landingSectionLeft p{
+  font-size: var(--fs-small);
+  color: #8F8F8F;
+  margin-top:2rem;
+}
 .landingSectionLeft img {
-  width: 550px;
+  width: 39em;
   height: auto;
 }
+
 .landingSectionRight {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 40px;
+  margin-left: 3em;
 }
-.landingSectionRight span {
-  color: var(--text-blue-color);
-}
+
 .landingSectionRight h1 {
-  color: var(--text-yellow-color);
-  font-size: 50px;
+  font-size: var(--fs-large);
+  font-weight: 700;
 }
-.landingSectionRight p {
-  font-size: 20px;
+
+.listDetails{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1em;
 }
-.landingSectionRight ul {
-  padding-left: 15px;
+
+.listitem{
+  width: 20em;
+  height: 5em;
+  border: 1px solid var(--fc-blue);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:1em;
 }
-.landingSectionRight li {
-  font-size: 20px;
+.listitem-text{
+  font-size:1.2rem;
+  font-weight: bold;
 }
+.listitem-image{
+  height: 2.4em;
+  width:2.4em;
+  margin-right: 1em;
+}
+
+
+
+
+
+
+
 .Projects h1 {
   text-align: center;
   font-size: 70px;
@@ -169,9 +201,10 @@
 .Register {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   position: relative;
-  margin-left: -80px;
-  width: 100%;
+  margin-top: 2em;
+  width: 90%;
 }
 .RegisterWrapper {
   display: flex;
@@ -180,29 +213,22 @@
   position: relative;
   width: fit-content;
 }
-.RegisterWrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 18px;
-  padding: 2px;
-  z-index: -1;
-  background: linear-gradient(to right, #4caed8, #c4e306);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
+.reg-btn{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
 .Register button {
-  background-color: var(--card-blue-color);
-  color: var(--text-color);
-  border-radius: 18px;
-  font-size: 20px;
+  background: var(--bg);
+  background: var(--bg-grad);
+  color: var(--fc-primary);
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
   border-style: none;
-  width: 200px;
-  height: 50px;
+  width: 8em;
+  height: 3em;
   cursor: pointer;
 }
 .RegisterWrapper button:hover {

@@ -5,7 +5,7 @@
 ::before {
 	box-sizing: border-box
 }
-
+/* 
 html{
     height: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -19,7 +19,7 @@ body {
 	line-height: 1.5;
 	color: #212529;
 	text-align: left;
-}
+} */
 
 #preloader {
     position: fixed;
@@ -55,6 +55,7 @@ body {
 	margin-right: auto;
 	margin-left: auto
 }
+
 
 @media (min-width:576px) {
 	.container {
@@ -200,14 +201,16 @@ body {
 }
 .main-timeline .timeline-content{
     width: 46.5%;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1rem;
+    color: var(--text-color);
     background-color:red;
     padding: 10px;
     margin: 0 30px 50px 0;
     background: var(--primary-yellow-color);
     position: relative;
     font-weight: 200;
-    color: #212529;
+    /* color: #212529; */
     /* font-size: 0.5em; */
 }
 .main-timeline .timeline-content:after{
@@ -222,9 +225,10 @@ body {
 }
 .main-timeline .title{
     float: left;
-    font-size: 1em;
+    font-size: 1.6em;
     font-weight: bold;
-    color: #504f54;
+    /* color: #504f54; */
+    color: var(--text-color);
     margin:  5px;
 }
 .main-timeline .post{
