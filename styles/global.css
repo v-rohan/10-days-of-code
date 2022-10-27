@@ -25,7 +25,14 @@
     background: var(--bg-grad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 2ms ease;
 }
+.grad-bg-text:hover{
+  filter: brightness(150%) drop-shadow(5px 5px 10px #D500D9);
+
+}
+
+
 
 html {
     scroll-behavior: smooth;

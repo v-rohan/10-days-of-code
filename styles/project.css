@@ -1,4 +1,4 @@
-#status {
+/* #status {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -12,32 +12,97 @@
   margin: -10px 0 0 -36px;
   background-position: unset;
   background-size: contain;
-}
+} */
 .col-5 a {
   text-decoration: underline !important;
 }
-.Projects h1 {
+
+.Projects-title h1 {
   text-align: center;
-  font-size: 70px;
-}
-.card {
-  background-color: transparent !important;
+  font-size: var(--fs-large);
+  margin-bottom: 2rem;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 25px;
-  padding: 2px;
-  background: linear-gradient(to right, #4caed8, #c4e306) !important;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
+.cardsWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+
 }
+
+.card1{
+  height: 16em;
+  width: 40em;
+  background: #00111A;
+  display: flex;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+.card1:hover{
+  transform: scale(1.005);
+  filter: grayscale(0%) brightness(120%) drop-shadow(10px 10px 20px var(--fc-blue));
+}
+.card-left{
+  width: 15em;
+  background-color: #00070A;
+  height: 16em;
+  display: flex;
+  flex-direction: column;
+}
+.card-img{
+  background-color:#D9D9D9 ;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img img{
+  height: 8em;
+}
+.txt-mentors{
+  padding: .5em;
+}
+.card-mentors{
+  font-size:.7em;
+  display: flex;
+  gap:.5em;
+  padding-left:.5em;
+  color: blue;
+  text-decoration: underline;
+}
+
+.card-right{
+  display: flex;
+  padding:2em 1em 2em 1em;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.diffculty-bar{
+  margin-top:3px;
+  width: 15em;
+  height: .8em;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.diffculty-bar-progress{
+  height: 100%;
+  width: 20%;
+  background-color: green;
+  border-radius: 20px;
+}
+.card-tags{
+  display: flex;
+  gap:.6em;
+}
+.card-tag{
+  background: var(--bg-grad);
+  background-color: var(--bg-grad);
+  font-size: .8em;
+  padding:.1em .4em .2em .4em;
+  border-radius: 20px;
+}
+
 .col-5 {
   background-color: var(--card-blue-color);
   border-radius: 25px 0px 0px 25px;

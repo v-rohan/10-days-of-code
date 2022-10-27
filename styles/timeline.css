@@ -181,7 +181,7 @@ body {
     padding: 8px 30px;
     margin: 0;
     font-size: 14px;
-    color: #212529;
+    color: var(--fc-primary);
     background: var(--primary-blue-color);
     text-align: center;
     position: absolute;
