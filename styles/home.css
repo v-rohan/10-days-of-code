@@ -72,7 +72,8 @@
 }
 
 .listitem{
-  width: 20em;
+  /* width: 20em; */
+  width: 40%;
   height: 5em;
   border: 1px solid var(--fc-blue);
   border-radius: 5px;
@@ -171,7 +172,7 @@
 .project-description{
   width: 15em;
   height: 9em;
-  padding:1em;
+  padding:.6em;
   background-color: #00111A;
   color: var(--fc-primary);
   border-radius: 0 0 5px 5px;

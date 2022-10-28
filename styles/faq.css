@@ -24,8 +24,12 @@ html {
   color: white;
 }
 
+.heading{
+  font-size: var(--fs-large);
+}
+
 .question {
-  background-color: var(--card-blue-color);
+  background-color: #00111A;  
   height: auto;
   display: flex;
   border-left: solid 5px #b2d02a;
@@ -34,7 +38,8 @@ html {
 }
 
 .answer {
-  background-color: #a4bb40;
+  background-color: #001f30ac;
+  color: #fff;
   height: auto;
   display: flex;
   border-left: solid 5px var(--card-blue-color);
@@ -49,7 +54,8 @@ html {
 
 .q-text {
   color: #ffffff;
-  font-size: 2vh;
+  font-size: 2.5vh;
+  font-weight: bold;
 }
 
 .a-span {
@@ -59,7 +65,7 @@ html {
 
 .a-text {
   font-size: 2vh;
-  color: #000000;
+  color: rgb(215, 214, 214);
 }
 
 .col-1,

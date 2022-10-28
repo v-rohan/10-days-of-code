@@ -38,6 +38,11 @@ html {
     scroll-behavior: smooth;
     font-family: var(--ff);
 }
+.go-up-btn{
+    position: fixed;
+    top: 85vh;
+    left: 90vw;
+}
 .background {
     background-image: url("../assets/Images/background.png");
     color: var(--fc-primary);
