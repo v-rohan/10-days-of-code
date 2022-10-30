@@ -6,7 +6,7 @@
   padding: 10px;
   margin: 30px;
   /* margin-top: 2em; */
-  height: 80vh;
+  /* height: 80vh; */
   z-index: 1;
 }
 .projectDetailsWrapper a {
@@ -36,12 +36,22 @@
 .landingSectionLeft {
   display: flex;
   flex-direction: column;
-  width:50%;
-  
+  width:50%;  
   align-items: center;
   justify-content: center;
   margin-right: 50px;
   margin-left: 20px;
+}
+@media screen and (max-width: 930px){
+  .landingSectionLeft {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
 }
 .landingSectionLeft p{
   font-size: var(--fs-small);
@@ -74,6 +84,7 @@
 .listitem{
   /* width: 20em; */
   width: 40%;
+  /* min-width: 40%; */
   height: 5em;
   border: 1px solid var(--fc-blue);
   border-radius: 5px;
@@ -91,6 +102,29 @@
   width:2.4em;
   margin-right: 1em;
 }
+@media screen and (max-width: 1400px) {
+  .listitem{
+    /* width: 20em; */
+    width: 80%;
+    /* min-width: 40%; */
+    height: 5em;
+    border: 1px solid var(--fc-blue);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:1em;
+  }
+  .listitem-text{
+    font-size:1.2rem;
+    font-weight: bold;
+  }
+  .listitem-image{
+    height: 2.4em;
+    width:2.4em;
+    margin-right: 1em;
+  }
+}
 
 
 
@@ -98,7 +132,7 @@
 
 .Projects{
   padding-top: 1.5em;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .Projects h1 {
   text-align: center;
@@ -109,14 +143,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /* align-items: center; */
+  justify-content: space-around;
+  align-items: center;
   padding: 10px 70px;
+  margin-top: 2em;
 }
 .projectDetails {
   margin: 1em;
-
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,9 +176,6 @@
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 } */
-.projectDiv{
-  margin-top: 2em;
-}
 .projectDetailsWrapper {
  
   display: flex;
@@ -176,6 +206,7 @@
   background-color: #00111A;
   color: var(--fc-primary);
   border-radius: 0 0 5px 5px;
+  
 }
 .knowMore {
   display: flex;
@@ -283,11 +314,12 @@
     padding: 5px;
     border-radius: 30px;
   }
-  .landingSectionLeft {
+  /* .landingSectionLeft {
     margin-right: 30px;
-  }
+  } */
   .landingSectionRight {
     margin-bottom: 0px;
+    margin-left: 0px;
   }
   .landingSectionLeft img {
     width: 300px;
@@ -315,6 +347,34 @@
   }
   .landingSectionRight ul {
     width: 90%;
+  }
+  .project-image{
+    width: 11em;
+    height: 12em;
+    background-color: #D7D5E1;
+    padding:.6em;
+    display: flex;
+      align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+  }
+  .project-image img{
+    width: 8em;
+    height: 8em;
+    display: flex;
+  
+  }
+  .project-description{
+    width: 11em;
+    height: 5em;
+    padding:.6em;
+    background-color: #00111A;
+    color: var(--fc-primary);
+    border-radius: 0 0 5px 5px;        
+  }
+  .project-description h2{
+    font-size: 1rem;
+    line-height: 25px;
   }
 }
 .sponsor {
@@ -346,7 +406,7 @@
   margin-bottom: 0;
   /* padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 4.5rem;
+  padding-top: 4.5rem; 
   padding-bottom: 4.5rem; */
   width: 100%;
   min-height: 100vh;
@@ -408,7 +468,15 @@ div.marquee > a > img {
   .landingSectionRight h1 {
     font-size: 38px;
   }
-  .landingSectionLeft {
-    margin-right: 20px;
+  .listitem-text{
+    font-size: 1rem;
   }
+  .listitem-image{
+    height: 2em;
+    width:2em;
+    margin-right: 1.5em;
+  }
+  /* .landingSectionLeft {
+    margin-right: 20px;
+  } */
 }

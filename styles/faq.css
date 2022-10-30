@@ -24,12 +24,12 @@ html {
   color: white;
 }
 
-.heading{
+.heading {
   font-size: var(--fs-large);
 }
 
 .question {
-  background-color: #00111A;  
+  background-color: #00111a;
   height: auto;
   display: flex;
   border-left: solid 5px #b2d02a;
@@ -128,15 +128,38 @@ html {
   #grow6 {
     background-color: var(--primary-yellow-color);
     border-left: solid 5px var(--card-blue-color);
-    color: #444444;
+    color: #a8a7a7;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 2.5vh;
     -moz-transition: height 0.5s;
     -ms-transition: height 0.5s;
     -o-transition: height 0.5s;
     -webkit-transition: height 0.5s;
     transition: height 0.5s;
     height: 0;
-    overflow: hidden;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+  }
+}
+@media only screen and (max-width: 400px) {
+  #grow0,
+  #grow1,
+  #grow2,
+  #grow3,
+  #grow4,
+  #grow5,
+  #grow6 {
+    background-color: var(--primary-yellow-color);
+    border-left: solid 5px var(--card-blue-color);
+    color: #a8a7a7;
+    font-weight: 500;
+    font-size: 2vh;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+    height: 0;
+    overflow-y: scroll;
   }
 }
