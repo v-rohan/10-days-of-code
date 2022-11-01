@@ -290,6 +290,8 @@
 }
 @media only screen and (max-width: 935px) {
   .Register {
+    left:0; 
+    width: none;
     justify-content: center;
     margin-bottom: 15px;
     margin-left: 0px;
@@ -372,6 +374,11 @@
   .knowMore{
     width: 100%;
     justify-content: center;
+  }
+  .landingSectionRightWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .sponsor {
