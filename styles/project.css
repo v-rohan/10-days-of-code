@@ -73,9 +73,33 @@
   border-radius: 20px;
   background-color: #fff;
 }
-.diffculty-bar-progress {
+.diffculty-bar-progress1 {
   height: 100%;
   width: 20%;
+  background-color: green;
+  border-radius: 20px;
+}
+.diffculty-bar-progress2 {
+  height: 100%;
+  width: 40%;
+  background-color: green;
+  border-radius: 20px;
+}
+.diffculty-bar-progress3 {
+  height: 100%;
+  width: 50%;
+  background-color: green;
+  border-radius: 20px;
+}
+.diffculty-bar-progress4 {
+  height: 100%;
+  width: 60%;
+  background-color: green;
+  border-radius: 20px;
+}
+.diffculty-bar-progress5 {
+  height: 100%;
+  width: 70%;
   background-color: green;
   border-radius: 20px;
 }
