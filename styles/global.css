@@ -32,11 +32,14 @@
 
 }
 
-
+*{
+    /* overflow: auto; */
+}
 
 html {
     scroll-behavior: smooth;
     font-family: var(--ff);
+    
 }
 .go-up-btn{
     position: fixed;
@@ -48,10 +51,10 @@ html {
     color: var(--fc-primary);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    max-width: 1920px;
-    min-height: 100vh;
+    /* width: 100%;
+    height: 100%; */
+    /* max-width: 1920px;
+    min-height: 100vh; */
     margin: 0 auto;
     background-position: fixed;
     background-attachment: fixed;
@@ -64,9 +67,10 @@ html {
 .Navbar {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    /* width: 100%; */
     max-width: 1920px;
-    margin: 0 auto;
+    
     padding: 0.5em 2em 1em 2em;
     z-index: 20000;
 }
@@ -150,6 +154,12 @@ html {
 @media screen and (max-width: 768px) {
     .menuicon {
         display: block;
+        height: 40px;
+        width: 40px;
+    }
+    .menuicon img{
+         height: 40px;
+    width: 40px;
     }
     .title a {
         display: none;

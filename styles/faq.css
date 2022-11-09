@@ -32,7 +32,7 @@ html {
   background-color: #00111a;
   height: auto;
   display: flex;
-  border-left: solid 5px #b2d02a;
+  border-left: solid 5px var(--fc-blue);
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
@@ -117,7 +117,7 @@ html {
     color: #fffaf0;
     font-size: 20px;
     cursor: pointer;
-    border-left: solid 5px #b2d02a;
+    border-left: solid 5px var(--fc-blue);
   }
   #grow0,
   #grow1,

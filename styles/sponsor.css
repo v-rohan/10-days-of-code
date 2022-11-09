@@ -8,9 +8,14 @@
 }
 
 .Sponsors {
+<<<<<<< HEAD
   /* background-color: #001621db; */
   background-image: url("../assets/Images/background.png");
   padding-top: 3.5rem;
+=======
+ 
+  /* padding-top: 3.5rem; */
+>>>>>>> 8cd65fdd8d934637e949b71ae093d9fa48d866d7
 }
 
 .Sponsors h1 {
@@ -44,20 +49,7 @@
   text-align: center;
   width: 300px;
 }
-/* .SponsorDetails::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 25px;
-  padding: 5px;
-  background: linear-gradient(to left, #4caed8, #c4e306);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
-} */
+
 .SponsorDetailsWrapper {
   background: var(--background-color);
   padding: 20px;
