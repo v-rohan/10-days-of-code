@@ -37,6 +37,7 @@
   display: flex;
   transition: all 200ms ease;
   cursor: pointer;
+  /* margin: ; */
 }
 .card1:hover {
   transform: scale(1.005);
@@ -58,7 +59,7 @@
   align-items: center;
 }
 .card-img img {
-  height: 8em;
+  height: 9em;
 }
 .txt-mentors {
   padding: 0.5em;
