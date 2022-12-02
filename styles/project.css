@@ -389,7 +389,7 @@
 
 @media only screen and (max-width: 700px) {
   .card1 {
-    height: 41em;
+    height: 41rem;
     width: 18rem;
     background: #00111a;
     display: flex;
@@ -438,7 +438,7 @@
 }
 @media only screen and (max-width: 360px) {
   .card1 {
-
+    height: 43rem;
     width: 16rem;
     background: #00111a;
     display: flex;
