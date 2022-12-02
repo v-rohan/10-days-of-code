@@ -55,7 +55,7 @@
   display: flex;
   gap: 0.5em;
   padding-left: 0.5em;
-  color: blue;
+  color: rgb(122, 207, 246);
   text-decoration: underline;
   flex-wrap: wrap;
 }
