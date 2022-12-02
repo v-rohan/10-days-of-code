@@ -193,7 +193,7 @@
   height: 1.5em;
 }
 .knowMoreWrapper button:hover {
-  filter: brightness(150%) drop-shadow(5px 5px 10px #D500D9);
+  filter: brightness(150%) drop-shadow(5px 5px 10px #00d9d2);
 }
 .Register {
   display: flex;
@@ -230,7 +230,7 @@
   transition: all 200ms ease;
 }
 .Register button:hover{
-  filter: brightness(150%) drop-shadow(5px 5px 10px #D500D9);  
+  filter: brightness(150%) drop-shadow(5px 5px 10px #00d9d2);  
 }
 .RegisterWrapper button:hover {
   background-color: var(--background-color);

@@ -7,7 +7,7 @@
     --fc-blue:#0095c2;
     --fs-small: 1rem;
     --fs-large: 3.9rem;
-    --bg: rgb(213,0,217);
+    --bg: rgb(163, 221, 226);
     --bg-grad: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%); 
 }
 .fc-blue{
@@ -28,7 +28,7 @@
   transition: all 2ms ease;
 }
 .grad-bg-text:hover{
-  filter: brightness(150%) drop-shadow(5px 5px 10px #D500D9);
+  filter: brightness(150%) drop-shadow(5px 5px 10px #00d9d2);
 
 }
 a{
