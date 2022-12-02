@@ -4,7 +4,7 @@
 :root {
     --ff: "Inter", sans-serif;
     --fc-primary: #ffffff;
-    --fc-blue:#0094C1;
+    --fc-blue:#0095c2;
     --fs-small: 1rem;
     --fs-large: 3.9rem;
     --bg: rgb(213,0,217);
@@ -31,7 +31,13 @@
   filter: brightness(150%) drop-shadow(5px 5px 10px #D500D9);
 
 }
-
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none !important;
+    color: inherit;
+}
 *{
     /* overflow: auto; */
     box-sizing: border-box;
@@ -151,6 +157,9 @@ html {
 #main {
     transition: margin-left 0.5s;
     padding: 20px;
+}
+.Navbar a{
+    font-size:1.3rem;
 }
 @media screen and (max-width: 768px) {
     .menuicon {
