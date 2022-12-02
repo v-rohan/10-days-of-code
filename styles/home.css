@@ -128,7 +128,7 @@
 }
 .projectDetails:hover{
   transform: scale(1.01);
-  filter: grayscale(0%) brightness(120%) drop-shadow(10px 10px 20px var(--fc-blue));
+  filter: grayscale(0%) brightness(120%) drop-shadow(5px 5px 10px hsl(194, 100%, 24%));;
 }
 .projectDetailsWrapper { 
   display: flex;
