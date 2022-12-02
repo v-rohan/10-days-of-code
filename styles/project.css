@@ -389,7 +389,7 @@
 
 @media only screen and (max-width: 700px) {
   .card1 {
-    height: 37em;
+    height: 41em;
     width: 18rem;
     background: #00111a;
     display: flex;
@@ -414,11 +414,13 @@
     padding-left: 0.5em;
     color: blue;
     text-decoration: underline;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
   .card-left {
     width: 18em;
     background-color: #00070a;
-    height: 19em;
+    height: 21em;
     display: flex;
     flex-direction: column;
   }
