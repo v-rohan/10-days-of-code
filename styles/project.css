@@ -412,7 +412,7 @@
     justify-content: center;
     gap: 0.5em;
     padding-left: 0.5em;
-    color: blue;
+    color: rgb(122, 207, 246);
     text-decoration: underline;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -438,7 +438,7 @@
 }
 @media only screen and (max-width: 360px) {
   .card1 {
-    height: 38em;
+    height: 43em;
     width: 16rem;
     background: #00111a;
     display: flex;
@@ -449,7 +449,7 @@
   .card-left {
     width: 16em;
     background-color: #00070a;
-    height: 19em;
+    height: 21em;
     display: flex;
     flex-direction: column;
   }
