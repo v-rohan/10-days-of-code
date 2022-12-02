@@ -5,15 +5,11 @@
   position: relative;
   padding: 10px;
   margin: 30px;
-  /* margin-top: 2em; */
-  /* height: 80vh; */
   z-index: 1;
 }
 .projectDetailsWrapper a {
   z-index: 30;
 }
-
-
 .landingSectionWrapper {
   display: flex;
   justify-content: space-between;
@@ -22,19 +18,16 @@
 .landingSectionLeft {
   display: flex;
   flex-direction: column;
-  /* width:20vw;   */
   align-items: center;
   justify-content: center;
   margin-right: 50px;
   margin-left: 20px;
 }
-
 @media screen and (max-width: 930px){
   .landingSectionLeft {
     display: flex;
     flex-direction: column;
-    width:80%;
-    
+    width:80%;    
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -49,31 +42,23 @@
   width: 30em;
   height: auto;
 }
-
 .landingSectionRight {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 40px;
   margin-left: 3em;
 }
-
 .landingSectionRight h1 {
   font-size: var(--fs-large);
   font-weight: 700;
 }
-
 .listDetails{
   display: flex;
   flex-wrap: wrap;
-  gap:1em;
-  
+  gap:1em;  
 }
-
 .listitem{
-  /* width: 20em; */
   width: 40%;
-  /* min-width: 40%; */
-  
   height: 5em;
   border: 1px solid var(--fc-blue);
   border-radius: 5px;
@@ -93,9 +78,7 @@
 }
 @media screen and (max-width: 1400px) {
   .listitem{
-    /* width: 20em; */
     width: 80%;
-    /* min-width: 40%; */
     height: 5em;
     border: 1px solid var(--fc-blue);
     border-radius: 5px;
@@ -114,14 +97,8 @@
     margin-right: 1em;
   }
 }
-
-
-
-
-
 .Projects{
   padding-top: 1.5em;
-  /* height: 100vh; */
 }
 .Projects h1 {
   text-align: center;
@@ -149,24 +126,8 @@
 .projectDetails:hover{
   transform: scale(1.01);
   filter: grayscale(0%) brightness(120%) drop-shadow(10px 10px 20px var(--fc-blue));
-
 }
-/* .projectDetails::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 25px;
-  padding: 5px;
-  background: linear-gradient(to left, #4caed8, #c4e306);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
-} */
-.projectDetailsWrapper {
- 
+.projectDetailsWrapper { 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,17 +146,14 @@
   width: 100%;
   height: 100%;
   display: flex;
-
 }
 .project-description{
   width: 14em;
   height: 9em;
   padding:.6em;
-  /* font-size: 1rem; */
   background-color: #00111A;
   color: var(--fc-primary);
-  border-radius: 0 0 5px 5px;
-  
+  border-radius: 0 0 5px 5px;  
 }
 .project-description h2{
   font-size: 1.1rem;
@@ -206,8 +164,7 @@
   justify-content: flex-end;
   position: relative;
   margin-top: 2em;
-  width: 95%;
-  
+  width: 95%;  
 }
 .knowMoreWrapper {
   display: flex;
@@ -216,11 +173,9 @@
   position: relative;
   width: fit-content;
 }
-
 .knowMore button {
  background: var(--bg);
-  background: var(--bg-grad);
-  
+  background: var(--bg-grad);  
   color: var(--fc-primary);
   border-radius: 5px;
   font-size: 1.2em;
@@ -236,7 +191,6 @@
 }
 .knowMoreWrapper button:hover {
   filter: brightness(150%) drop-shadow(5px 5px 10px #D500D9);
-
 }
 .Register {
   display: flex;
@@ -259,7 +213,6 @@
   padding: 0 1em 0 1em;
   align-items: center;
 }
-
 .Register button {
   background: var(--bg);
   background: var(--bg-grad);
@@ -274,8 +227,7 @@
   transition: all 200ms ease;
 }
 .Register button:hover{
-  filter: brightness(150%) drop-shadow(5px 5px 10px #D500D9);
-  
+  filter: brightness(150%) drop-shadow(5px 5px 10px #D500D9);  
 }
 .RegisterWrapper button:hover {
   background-color: var(--background-color);
@@ -312,9 +264,6 @@
     padding: 5px;
     border-radius: 30px;
   }
-  /* .landingSectionLeft {
-    margin-right: 30px;
-  } */
   .landingSectionRight {
     margin-bottom: 0px;
     margin-left: 0px;
@@ -347,8 +296,6 @@
     width: 90%;
   }
   .project-image{
-    /* width: 11em;
-    height: 12em; */
     background-color: #D7D5E1;
     display: flex;
       align-items: center;
@@ -358,11 +305,9 @@
   .project-image img{
     width: 100%;
     height: 100%;
-    display: flex;
-  
+    display: flex;  
   }
   .project-description{
-    /* width: 11em;*/
     height: 7em; 
     padding:.6em;
     background-color: #00111A;
@@ -410,10 +355,6 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  /* padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 4.5rem; 
-  padding-bottom: 4.5rem; */
   width: 100%;
   min-height: 100vh;
 }
@@ -482,15 +423,7 @@ div.marquee > a > img {
     width:2em;
     margin-right: 1.5em;
   }
-  /* .landingSectionLeft {
-    margin-right: 20px;
-  } */
 }
-
-
-
-
-
 .timeline {
   margin-bottom: 4em;
 }
@@ -503,7 +436,7 @@ div.marquee > a > img {
   justify-content: center;
   align-items: center;
 }
-.date-content-wrapper {
+.date-content-wrapper{
   margin-top: 4em;
   display: flex;
   flex-direction: row;
@@ -512,8 +445,8 @@ div.marquee > a > img {
   padding-bottom: 2em;
   align-items: center;
 }
-.date-wrapper {
-  width: 50%;
+.date-wrapper{
+  width: 27rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -521,12 +454,11 @@ div.marquee > a > img {
   font-size: 2.5rem;
   font-weight: bold;
 }
-
-.content {
+.content{
   margin-left: 10vw;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 27rem;
   align-items: flex-start;
   justify-content: center;
 }
@@ -537,7 +469,6 @@ div.marquee > a > img {
 .timeline-desc {
   margin-top: 1em;
   font-size: 1em;
-  color: #c4c4c4;
 }
 .middle-border {
   width: 5px;
@@ -551,11 +482,18 @@ div.marquee > a > img {
   background-color: var(--fc-blue);
   height: 200px;
 }
+@media screen and (max-width: 920px){
+  .content{
+    width: 20rem;
+  }
+  .date-wrapper{
+    width: 20rem;
+  }
+}
 @media screen and (max-width: 800px) {
   .date-content-wrapper {
     flex-direction: row;
     justify-content: flex-start;
-    /* width: 100%; */
     margin-left: 30px;
   }
   .middle-border {
@@ -614,7 +552,6 @@ div.marquee > a > img {
   .timeline-heading {
     font-size: 1rem;
   }
-
   .content {
     margin-left: 0px;
     display: flex;

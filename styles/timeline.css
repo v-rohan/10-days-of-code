@@ -1,4 +1,4 @@
-.timeline {
+/* .timeline {
   margin-bottom: 4em;
 }
 .time {
@@ -62,7 +62,6 @@
   .date-content-wrapper {
     flex-direction: row;
     justify-content: flex-start;
-    /* width: 100%; */
     margin-left: 30px;
   }
   .middle-border {
@@ -137,4 +136,4 @@
   .timeline-heading {
     font-size: 1rem;
   }
-}
+} */
