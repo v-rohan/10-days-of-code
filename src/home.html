@@ -1,108 +1,444 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Ten Days Of Code</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<head>
-  <title>Ten Days Of Code</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-
-<body>
-  <div class="landingSection">
-    <div class="landingSectionWrapper">
-      <div class="landingSectionLeft">
-        <img src="assets/Images/tdoc.png" alt="" />
-      </div>
-      <div class="landingSectionRight">
-        <div class="landingSectionRightWrapper">
-          <h1><span>TDOC IS</span> HERE!</h1>
+  <body>
+    <div class="landingSection">
+      <div class="landingSectionWrapper">
+        <div class="landingSectionLeft">
+          <img src="assets/Images/tdoc.png" alt="" />
           <p>
-            10 days of code is an initiative to encourage young minds to take
-            up coding and take them through a comprehensive process of
-            building a project from scratch.
+            An initiative to encourage young minds through a comprehensive
+            process of building a project from scratch.
           </p>
-          <div class="listDetails">
-            <ul>
-              <li>Project development based learning.</li>
-              <li>All difficulty levels covered.</li>
-              <li>Open Source Quizzes!</li>
-              <li>
-                Dev Talks With Internationally renowned software
-                professionals!
-              </li>
-              <li>Live Coding sessions and personalised mentorship.</li>
-              <li>Certificates of Completion and Merit to be awarded.</li>
-            </ul>
+        </div>
+        <div class="landingSectionRight">
+          <div class="landingSectionRightWrapper">
+            <h1 class="homePageHeading">
+              <span class="fc-blue">TDOC</span> IS HERE!
+            </h1>
+
+            <div class="listDetails">
+              <div class="listitem">
+                <div class="listitem-text">
+                  <span class="fc-blue">Projects</span> Based learning
+                </div>
+                <img
+                  src="../assets/icons/learning.svg"
+                  alt=""
+                  class="listitem-image"
+                />
+              </div>
+              <div class="listitem">
+                <div class="listitem-text">
+                  <span class="fc-blue">Beginner</span> to
+                  <span class="fc-blue">Advanced</span> Level
+                </div>
+                <img
+                  src="../assets/icons/beg-adv.svg"
+                  alt=""
+                  class="listitem-image"
+                />
+              </div>
+              <div class="listitem">
+                <div class="listitem-text">
+                  Open source
+                  <span class="fc-blue">Quiz</span>
+                </div>
+                <img
+                  src="../assets/icons/quiz.svg"
+                  alt=""
+                  class="listitem-image"
+                />
+              </div>
+              <div class="listitem">
+                <div class="listitem-text">
+                  Dev talks with
+                  <span class="fc-blue">industry experts</span>
+                </div>
+                <img
+                  src="../assets/icons/expert.svg"
+                  alt=""
+                  class="listitem-image"
+                />
+              </div>
+              <div class="listitem">
+                <div class="listitem-text">
+                  <span class="fc-blue">Personalized</span>
+                  mentorship
+                </div>
+                <img
+                  src="../assets/icons/mentorship.svg"
+                  alt=""
+                  class="listitem-image"
+                />
+              </div>
+              <div class="listitem">
+                <div class="listitem-text">
+                  Awards and
+                  <span class="fc-blue">certificate</span> of completion
+                </div>
+                <img
+                  src="../assets/icons/certificate.svg"
+                  alt=""
+                  class="listitem-image"
+                />
+              </div>
+            </div>
+            
+            <div class="Register">
+              <div class="RegisterWrapper">
+                <button
+                  class="reg-btn"
+                  onclick="document.location='https://bit.ly/3iMYUJT'"
+                >
+                  <span>Register</span>
+                  <img src="../assets/icons/arrow.svg" alt="" />
+                </button>
+              </div>
+            </div>
+           
           </div>
-          <div class="Register">
-            <div class="RegisterWrapper">
-              <button onclick="document.location='https://rb.gy/cogpgh'">Register Here</button>
+        </div>
+      </div>
+    </div>
+    <div class="Projects" id="projects">
+      <h1><span class="fc-blue">Pro</span>jects</h1>
+      <div class="projectDiv">
+        <div class="projectDetails">
+          <div class="projectDetailsWrapper">
+            <div class="project-image">
+              <img src="assets/Images/eth-raiser.png" alt="" />
+            </div>
+            <div class="project-description">
+              <h2>Charity Platform in Etherium</h2>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetails">
+          <div class="projectDetailsWrapper">
+            <div class="project-image">
+              <img src="assets/Images/synapse.png" alt="" />
+            </div>
+            <div class="project-description">
+              <h2>API Testing in Python</h2>
             </div>
           </div>
         </div>
 
-      </div>
-    </div>
-  </div>
-  <div class="Projects">
-    <h1>Projects</h1>
-    <div class="projectDiv">
-      <div class="projectDetails">
-        <div class="projectDetailsWrapper">
-          <img src="assets/Images/logo.svg" alt="" />
-          <a href="./src/project.html#mailscape">
-            <h2>Mail Client in Java</h2>
-          </a>
+        <div class="projectDetails">
+          <div class="projectDetailsWrapper">
+            <div class="project-image">
+              <img src="assets/Images/muzingle.png" alt="" />
+            </div>
+            <div class="project-description">
+              <h2>Music Recommendation in ML</h2>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetails">
+          <div class="projectDetailsWrapper">
+            <div class="project-image">
+              <img src="assets/Images/pairwithpeer.png" alt="" />
+            </div>
+            <div class="project-description">
+              <h2>File Sharing System in C/C++</h2>
+            </div>
+          </div>
+        </div>
+        <div class="projectDetails">
+          <div class="projectDetailsWrapper">
+            <div class="project-image">
+              <img src="assets/Images/tradedeck.png" alt="" />
+            </div>
+            <div class="project-description">
+              <h2>Stock Market Analyser in Java</h2>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="projectDetails">
-        <div class="projectDetailsWrapper">
-          <img src="assets/Images/glugle.svg" alt="" />
-          <a href="./src/project.html#glugle">
-            <h2>Search Engine in Python</h2>
-          </a>
-        </div>
-      </div>
-      <div class="projectDetails">
-        <div class="projectDetailsWrapper">
-          <img src="assets/Images/sketchio.png" alt="" />
-          <a href="./src/project.html#sketchio">
-            <h2>Skribbl Clone in NodeJS</h2>
-          </a>
-        </div>
-      </div>
-      <div class="projectDetails">
-        <div class="projectDetailsWrapper">
-          <img src="assets/Images/expressando.svg" alt="" />
-          <a href="./src/project.html#expressando">
-            <h2>Sign Detection in ML</h2>
-          </a>
-        </div>
-      </div>
-      <div class="projectDetails">
-        <div class="projectDetailsWrapper">
-          <img src="assets/Images/Creact.png" alt="" />
-          <a href="./src/project.html#creact">
-            <h2>Esoteric Programming Language in C/C++</h2>
-          </a>
-        </div>
-      </div>
-      <div class="projectDetails">
-        <div class="projectDetailsWrapper">
-          <img src="assets/Images/ethereal.png" alt="" />
-          <a href="./src/project.html#ethereal">
-            <h2>Banking System in Ethereum</h2>
-          </a>
+      <div class="knowMore">
+        <div class="knowMoreWrapper">
+          <button
+            class="reg-btn"
+            onclick="document.location='./src/project.html'"
+          >
+            <span>Know More</span>
+            <img src="../assets/icons/arrow.svg" alt="" />
+          </button>
         </div>
       </div>
     </div>
-  </div>
-  <div class="knowMore">
-    <div class="knowMoreWrapper">
-      <button onclick="document.location='./src/project.html'">Know More</button>
+
+    <div id="time_line">
+      <h1 class="time"><span class="fc-blue">Time</span>line</h1>
+
+        <div class="timeline">
+            <div class="date-content-wrapper">
+                <div class="starting-border"></div>
+                <div class="test">
+                    <div class="date-wrapper">
+                        <span class="month">December</span>
+                       <span class="date"> <span class="fc-blue">12th</span>, 2022</span>
+                   </div>
+                   <div class="middle-border"></div>
+                   <div class="content">
+                       <div class="timeline-heading">DAY 1</div>
+                       <div class="timeline-desc">
+                        <div class="list-item">
+                          -> Welcome and Onboarding
+                      </div>
+                           <div class="list-item">-> About The event</div>
+                           <div class="list-item">
+                               -> What do we gain at the end
+                           </div>
+                           <div class="list-item">
+                               -> How do we cover various aspects(importance of
+                               projects)
+                           </div>
+                       </div>
+                   </div>
+                  </div>
+                
+            </div>
+        </div>        
+        </div>
+
+        <div class="timeline">
+          <div class="date-content-wrapper">
+              <div class="starting-border"></div>
+              <div class="test">
+                  <div class="date-wrapper">
+                      <span class="month">December</span>
+                     <span class="date"> <span class="fc-blue">13th</span>, 2022</span>
+                 </div>
+                 <div class="middle-border"></div>
+                 <div class="content">
+                     <div class="timeline-heading">DAY 2</div>
+                     <div class="timeline-desc">
+                         <div class="list-item">-> Combined VC on Discord where we introduce the individual mentors/team channels</div>
+                         <div class="list-item">
+                             -> Participants split into groups
+                         </div>
+                         <div class="list-item">
+                             -> Git/GitHub Basics
+                         </div>
+                         <div class="list-item">
+                          -> Individual orientation and Projects begin
+                      </div>
+                     </div>
+                 </div>
+                </div>
+              
+          </div>
+      </div>      
+      </div>
+
+      <div class="timeline">
+        <div class="date-content-wrapper">
+            <div class="starting-border"></div>
+            <div class="test">
+                <div class="date-wrapper">
+                    <span class="month">December</span>
+                   <span class="date"> <span class="fc-blue">14th</span>, 2022</span>
+               </div>
+               <div class="middle-border"></div>
+               <div class="content">
+                   <div class="timeline-heading">DAY 3</div>
+                   <div class="timeline-desc">
+                       <div class="list-item">-> Agenda for the day</div>
+                       <div class="list-item">
+                           -> Students code individually
+                       </div>
+                       <div class="list-item">
+                           -> Mentoring as required
+                       </div>
+                   </div>
+               </div>
+              </div>
+            
+        </div>
+    </div> 
     </div>
+
+    <div class="timeline">
+      <div class="date-content-wrapper">
+          <div class="starting-border"></div>
+          <div class="test">
+              <div class="date-wrapper">
+                  <span class="month">December</span>
+                 <span class="date"> <span class="fc-blue">15th</span>, 2022</span>
+             </div>
+             <div class="middle-border"></div>
+             <div class="content">
+                 <div class="timeline-heading">DAY 4</div>
+                 <div class="timeline-desc">
+                     <div class="list-item">-> About The event</div>
+                     <div class="list-item">
+                         -> DevTalk 
+                     </div>
+                     <div class="list-item">
+                         -> Coding Continues
+                     </div>
+                 </div>
+             </div>
+            </div>          
+      </div>
   </div>
-  <!-- <div class="sponsor">
+  </div>
+
+  <div class="timeline">
+    <div class="date-content-wrapper">
+        <div class="starting-border"></div>
+        <div class="test">
+            <div class="date-wrapper">
+                <span class="month">December</span>
+               <span class="date"> <span class="fc-blue">16th</span>, 2022</span>
+           </div>
+           <div class="middle-border"></div>
+           <div class="content">
+               <div class="timeline-heading">DAY 5</div>
+               <div class="timeline-desc">
+                   <div class="list-item">-> Agenda for the day</div>
+                   <div class="list-item">
+                       -> Students code individually
+                   </div>
+                   <div class="list-item">
+                       -> Mentoring as per requirement
+                   </div>
+               </div>
+           </div>
+          </div>
+        
+    </div>
+</div>
+</div>
+
+<div class="timeline">
+  <div class="date-content-wrapper">
+      <div class="starting-border"></div>
+      <div class="test">
+          <div class="date-wrapper">
+              <span class="month">December</span>
+             <span class="date"> <span class="fc-blue">17th</span>, 2022</span>
+         </div>
+         <div class="middle-border"></div>
+         <div class="content">
+             <div class="timeline-heading">DAY 6</div>
+             <div class="timeline-desc">
+                 <div class="list-item">-> Coding Continues</div>
+             </div>
+         </div>
+        </div>
+      
+  </div>
+</div>
+</div>
+
+<div class="timeline">
+  <div class="date-content-wrapper">
+      <div class="starting-border"></div>
+      <div class="test">
+          <div class="date-wrapper">
+              <span class="month">December</span>
+             <span class="date"> <span class="fc-blue">18th</span>, 2022</span>
+         </div>
+         <div class="middle-border"></div>
+         <div class="content">
+             <div class="timeline-heading">DAY 7</div>
+             <div class="timeline-desc">
+                 <div class="list-item">-> End the Main Task</div>
+                 <div class="list-item">
+                     -> The submission deadline for the main task
+                 </div>
+             </div>
+         </div>
+        </div>      
+  </div>
+</div>
+</div>
+
+<div class="timeline">
+  <div class="date-content-wrapper">
+      <div class="starting-border"></div>
+      <div class="test">
+          <div class="date-wrapper">
+              <span class="month">December</span>
+             <span class="date"> <span class="fc-blue">19th</span>, 2022</span>
+         </div>
+         <div class="middle-border"></div>
+         <div class="content">
+             <div class="timeline-heading">DAY 8</div>
+             <div class="timeline-desc">
+                 <div class="list-item">-> Introduction about Open innovation</div>
+                 <div class="list-item">
+                     -> Open Innovation starts
+                 </div>
+                 <div class="list-item">
+                     -> Individual mentoring if required
+                 </div>
+             </div>
+         </div>
+      </div>      
+  </div>
+</div>
+</div>
+
+<div class="timeline">
+  <div class="date-content-wrapper">
+      <div class="starting-border"></div>
+      <div class="test">
+          <div class="date-wrapper">
+              <span class="month">December</span>
+             <span class="date"> <span class="fc-blue">20th</span>, 2022</span>
+         </div>
+         <div class="middle-border"></div>
+         <div class="content">
+             <div class="timeline-heading">DAY 9</div>
+             <div class="timeline-desc">
+                 <div class="list-item">-> Open Innovation continues</div>
+                 <div class="list-item">
+                     -> Individual mentoring If Required
+                 </div>
+                 <div class="list-item">
+                     -> Open Innovation closes, Submission deadline
+                 </div>
+             </div>
+         </div>
+      </div>      
+  </div>
+</div>
+</div>
+
+<div class="timeline">
+  <div class="date-content-wrapper">
+      <div class="starting-border"></div>
+      <div class="test">
+          <div class="date-wrapper">
+              <span class="month">December</span>
+              <span class="date"> <span class="fc-blue">21st</span>, 2022</span>
+         </div>
+         <div class="middle-border"></div>
+         <div class="content">
+             <div class="timeline-heading">DAY 10</div>
+             <div class="timeline-desc">
+                 <div class="list-item">-> Closing ceremony (Vote of Thanks)</div>
+                 <div class="list-item">
+                     -> Winner(s) announcement
+                 </div>
+             </div>
+         </div>
+        </div>      
+  </div>
+</div>
+</div>        
+    </div>
+
+    <!-- <div class="sponsor">
     <h1>Sponsors</h1>
   <section class="logoMarqueeSection">
     <div class="container" id="logoMarqueeSection">
@@ -145,6 +481,5 @@
     </div>
   </section>
   </div> -->
-</body>
-
+  </body>
 </html>

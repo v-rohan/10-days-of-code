@@ -5,6 +5,7 @@
   text-align: center;
   padding-bottom: 20px;
   font-size: 20px;
+  line-height: 29px;
 }
 .footer p {
   margin-bottom: 5px;
@@ -13,4 +14,10 @@
   height: 35px;
   width: auto;
   margin: 0 5px;
+}
+@media only screen and (max-width: 360px) {
+  .footer {
+    font-size: 15px;
+    line-height: 23px;
+  }
 }

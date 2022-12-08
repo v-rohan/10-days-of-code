@@ -24,17 +24,22 @@ html {
   color: white;
 }
 
+.heading {
+  font-size: var(--fs-large);
+}
+
 .question {
-  background-color: var(--card-blue-color);
+  background-color: #00111a;
   height: auto;
   display: flex;
-  border-left: solid 5px #b2d02a;
+  border-left: solid 5px var(--fc-blue);
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 
 .answer {
-  background-color: #a4bb40;
+  background-color: #001f30ac;
+  color: #fff;
   height: auto;
   display: flex;
   border-left: solid 5px var(--card-blue-color);
@@ -44,12 +49,13 @@ html {
 
 .q-span {
   font-size: 5vh;
-  color: #b2d02a;
+  color: #0095c2 !important;
 }
 
 .q-text {
   color: #ffffff;
-  font-size: 2vh;
+  font-size: 2.5vh;
+  font-weight: bold;
 }
 
 .a-span {
@@ -59,7 +65,7 @@ html {
 
 .a-text {
   font-size: 2vh;
-  color: #000000;
+  color: rgb(215, 214, 214);
 }
 
 .col-1,
@@ -111,7 +117,7 @@ html {
     color: #fffaf0;
     font-size: 20px;
     cursor: pointer;
-    border-left: solid 5px #b2d02a;
+    border-left: solid 5px var(--fc-blue);
   }
   #grow0,
   #grow1,
@@ -122,15 +128,38 @@ html {
   #grow6 {
     background-color: var(--primary-yellow-color);
     border-left: solid 5px var(--card-blue-color);
-    color: #444444;
+    color: #a8a7a7;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 2.5vh;
     -moz-transition: height 0.5s;
     -ms-transition: height 0.5s;
     -o-transition: height 0.5s;
     -webkit-transition: height 0.5s;
     transition: height 0.5s;
     height: 0;
-    overflow: hidden;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+  }
+}
+@media only screen and (max-width: 400px) {
+  #grow0,
+  #grow1,
+  #grow2,
+  #grow3,
+  #grow4,
+  #grow5,
+  #grow6 {
+    background-color: var(--primary-yellow-color);
+    border-left: solid 5px var(--card-blue-color);
+    color: #a8a7a7;
+    font-weight: 500;
+    font-size: 2vh;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+    height: 0;
+    overflow-y: scroll;
   }
 }

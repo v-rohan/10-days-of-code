@@ -2,146 +2,191 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 :root {
-  --text-color: #fff;
-  --primary-blue-color: #4caed8;
-  --primary-yellow-color: #b2d02a;
-  --text-blue-color: #0099e3;
-  --text-yellow-color: #b4d32d;
-  --card-blue-color: #014262a8;
-  --background-color: rgba(58, 79, 60, 0.29);
+    --ff: "Inter", sans-serif;
+    --fc-primary: #ffffff;
+    --fc-blue:#0095c2;
+    --fs-small: 1rem;
+    --fs-large: 3.9rem;
+    --bg: rgb(163, 221, 226);
+    --bg-grad: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%); 
 }
-a {
-  text-decoration: none !important;
-  font-family: "Raleway", sans-serif;
+.fc-blue{
+    color: var(--fc-blue);
 }
-h1 {
-  font-family: "Raleway", sans-serif;
+.bold {
+    font-weight: 700;
 }
-h2 {
-  font-family: "Raleway", sans-serif;
+.grad-bg {
+    background: var(--bg);
+    background: var(--bg-grad);
 }
-p {
-  font-family: "Raleway", sans-serif;
+.grad-bg-text{
+   background: var(--bg);
+    background: var(--bg-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 2ms ease;
 }
-li {
-  font-family: "Raleway", sans-serif;
+.grad-bg-text:hover{
+  filter: brightness(150%) drop-shadow(5px 5px 10px #00d9d2);
+
 }
-div {
-  font-family: "Raleway", sans-serif;
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none !important;
+    color: inherit;
+}
+*{
+    /* overflow: auto; */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--ff);
+    
+}
+.go-up-btn{
+    position: fixed;
+    top: 85vh;
+    left: 90vw;
 }
 .background {
-  background-image: url("../assets/Images/back.png");
-  color: var(--text-color);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  max-width: 1380px;
-  min-height: 100vh;
-  margin: 0 auto;
-  background-position: fixed;
-  background-attachment: fixed;
-  background-color: rgb(13, 17, 27);
+    background-image: url("../assets/Images/background.png");
+    color: var(--fc-primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%;
+    height: 100%; */
+    /* max-width: 1920px;
+    min-height: 100vh; */
+    margin: 0 auto;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-color: rgb(13, 17, 27);
 }
 .time {
-  text-align: center;
-  font-size: 70px;
+    text-align: center;
+    font-size: 70px;
 }
 .Navbar {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 10px;
-  z-index: 20000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    max-width: 1920px;
+    
+    padding: 0.5em 2em 1em 2em;
+    z-index: 20000;
+}
+.logo>a>img{
+  height: 3em;
+  width: 3em;
 }
 .topnav {
-  /* overflow: hidden; */
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .topnav img {
-  height: 40px;
-  width: auto;
-  margin-right: 10px;
-  margin-top: 15px;
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.title{
+  display: flex;
+  align-items: center;
 }
 .title a {
-  float: left;
-  display: flex;
-  color: var(--text-color);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 24px;
+    float: left;
+    display: flex;
+     align-items: flex-end;
+    color: var(--text-color);
+    text-align: center;
+    padding: .5em .5em;
+    text-decoration: none;
+    font-size: var(--fs-small);
+    transition: all 200ms ease;
 }
 
 .title a:hover {
-  color: var(--primary-blue-color);
+    color: var(--fc-blue);
 }
 .menuicon {
-  display: none;
+    display: none;
 }
 
 .sidenav {
-  height: 100vh;
-  width: 0;
-  position: fixed;
-  z-index: 30000;
-  top: 0;
-  right: 0;
-  background-color: rgb(8, 7, 7);
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 30000;
+    top: 0;
+    right: 0;
+    background-color: rgb(8, 7, 7);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 25px;
-  z-index: 3001;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 25px;
+    z-index: 3001;
+    display: block;
+    transition: 0.3s;
 }
 .sidenav a:hover {
-  color: var(--primary-blue-color);
+    color: var(--primary-blue-color);
 }
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 #main {
-  transition: margin-left 0.5s;
-  padding: 20px;
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+.Navbar a{
+    font-size:1.3rem;
 }
 @media screen and (max-width: 768px) {
-  .menuicon {
-    display: block;
-  }
-  .title a {
-    display: none;
-  }
+    .menuicon {
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+    .menuicon img{
+         height: 40px;
+    width: 40px;
+    }
+    .title a {
+        display: none;
+    }
 
-  .title a.icon {
-    float: right;
-    display: block;
-  }
-  .sidenav {
-    padding-top: 30px;
-  }
+    .title a.icon {
+        float: right;
+        display: block;
+    }
+    .sidenav {
+        padding-top: 30px;
+    }
 
-  .sidenav a {
-    font-size: 20px;
-  }
-  .topnav img {
-    margin-top: 0px;
-  }
+    .sidenav a {
+        font-size: 20px;
+    }
+    .topnav img {
+        margin-top: 0px;
+    }
 }
